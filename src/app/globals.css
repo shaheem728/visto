@@ -1,4 +1,12 @@
 @import "tailwindcss";
+@import "uploadthing/tw/v4"; /*Uploadthing’s Tailwind styles*/
+
+/* Tell Tailwind where to scan for class usage */
+@source "../../node_modules/@uploadthing/react/dist";
+@source "./src/**/*.{js,ts,jsx,tsx}";
+@source "./components/**/*.{js,ts,jsx,tsx}";
+
+@import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
